@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background: black
+}
+
+#website-navigation {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 40px;
+}
+
+#personal-info {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#subject {
+    font-size: 60px;
+    color: white;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+#subject-code {
+    font-size: 30px;
+    color: white;
+}
+
+#subject-name {
+    font-size: 60px;
+    color
+}
+
+#content-container {
+    position: relative;
+    justify-content: center;
+}
+
+#href-computation {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background: white;
+    left: 15%;
+    top: 10%;
+}
+
+#href-biography {
+    height: 500px;
+    width: 400px;
+    background: yellow;
+    color: black;
+    margin: auto;
+}
+
+#href-reflection {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background: white;
+    right: 15%;
+    bottom: 10%;
+}
