@@ -18,21 +18,34 @@ body {
     text-align: center;
 }
 
+#outer-container {
+    display: flex;
+    width: 100%;
+}
+
+#subject-navigation {
+    background: red;
+    width: 200px;
+}
+
+#subject-information {
+    padding: 30px;
+    width: 100%
+}
+
 #subject {
-    font-size: 60px;
+    display: flex;
     color: white;
-    justify-content: center;
+    justify-content: start;
     margin-left: 10vw;
 }
 
 #subject-code {
     font-size: 30px;
-    color: white;
 }
 
 #subject-name {
     font-size: 60px;
-    color
 }
 
 #content-container {
@@ -52,7 +65,7 @@ body {
 #href-biography {
     height: 500px;
     width: 400px;
-    background: yellow;
+    background: blue;
     color: black;
     margin: auto;
 }
