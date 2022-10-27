@@ -1,0 +1,11 @@
+#subject-back {
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+}
+
+#reflect-container {}
+
+#reflect-paragraph {
+    display: flex
+}

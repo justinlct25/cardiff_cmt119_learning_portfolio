@@ -1,6 +1,11 @@
 body {
     margin: 0;
-    background: black
+    background: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('./futures-literacy-background.webp');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 span {
@@ -11,8 +16,24 @@ span {
     filter: blur(0px);
 }
 
+a {
+    color: inherit;
+}
+
+.href:hover {
+    opacity: 1 !important;
+    background: cyan;
+    transition: 0.5s;
+}
+
 .border-fade {
     box-shadow: 0 0 8px 8px white inset;
+}
+
+.separation-line {
+    border-bottom: 1px solid white;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .center-div-xy {
@@ -27,16 +48,24 @@ span {
 }
 
 #website-navigation {
-    background: black;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     font-size: 40px;
-    border-bottom: 1px solid white;
     margin-left: 30px;
     margin-right: 30px;
-    /* border-color: white; */
+}
+
+#nav-info-container {
+    display: flex;
+}
+
+#nav-info-container div {
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
 }
 
 #personal-info {
@@ -48,45 +77,89 @@ span {
 #outer-container {
     display: flex;
     width: 100%;
+    padding: 10px;
+}
+
+.subject-nav {
+    /* display: none; */
+    width: 200px;
+    height: 500px;
+    background: blue;
+}
+
+#subject-nav-btn:checked~.subject-nav::after {
+    /* display: inline; */
+    background: red;
 }
 
 #subject-navigation {
+    /* position: absolute; */
+    /* left: 0; */
+    /* display: none; */
+}
+
+
+/* 
+#subject-navigation div {
+    display: none;
     background: red;
+    height: 100%;
     width: 200px;
 }
 
+#subject-navigation:focus div {
+    display: block;
+    position: inherit;
+    background: blue;
+} */
+
 #subject-information {
     position: relative;
-    padding: 10px;
+    padding: 10px 10px 20px 20px;
     width: 100%;
-    margin-left: 30px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    /* margin-left: 30px; */
 }
 
 #subject {
+    position: relative;
     display: flex;
     color: white;
-    justify-content: start;
-    margin-left: 10vw;
+    justify-content: center;
     align-items: center;
 }
 
 #subject div {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-bottom: 10px;
 }
 
 #subject-code {
-    font-size: 30px;
+    font-size: 25px;
+    width: 125px;
 }
 
 #subject-name {
-    font-size: 60px;
+    font-size: 50px;
+}
+
+#subject-btn {
+    font-size: 20px;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+#subject-back {
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
 }
 
 #content-container {
     position: relative;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .relative-container {
@@ -113,12 +186,18 @@ span {
     height: 100%;
     width: 100%;
     background-size: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
-.bg:hover {
-    opacity: 1;
-    transition: 0.5s;
+#bg-body {
+    background-image: url('./futures-literacy-background.webp');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    z-index: -20;
+    opacity: 0.4 !important;
 }
 
 #bg-school {
@@ -170,4 +249,15 @@ span {
     width: 400px;
     right: 15%;
     bottom: 1%;
+}
+
+.href-description {
+    color: white;
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.href:hover .href-description {
+    display: block;
 }
