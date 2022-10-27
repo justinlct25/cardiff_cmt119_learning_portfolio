@@ -3,6 +3,29 @@ body {
     background: black
 }
 
+span {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(13px);
+    filter: blur(0px);
+}
+
+.border-fade {
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+.center-div-xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-div-x {
+    display: flex;
+    justify-content: center;
+}
+
 #website-navigation {
     background: black;
     color: white;
@@ -10,6 +33,10 @@ body {
     justify-content: space-between;
     padding: 20px;
     font-size: 40px;
+    border-bottom: 1px solid white;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* border-color: white; */
 }
 
 #personal-info {
@@ -29,8 +56,11 @@ body {
 }
 
 #subject-information {
-    padding: 30px;
-    width: 100%
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    margin-left: 30px;
+    margin-left: 30px;
 }
 
 #subject {
@@ -38,6 +68,12 @@ body {
     color: white;
     justify-content: start;
     margin-left: 10vw;
+    align-items: center;
+}
+
+#subject div {
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 #subject-code {
@@ -53,28 +89,85 @@ body {
     justify-content: center;
 }
 
+.relative-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.relative-container span {
+    margin: 20px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.center-div-x span {
+    color: black;
+    font-weight: bold;
+}
+
+.bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    opacity: 0.7;
+}
+
+.bg:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#bg-school {
+    background-image: url('./Main-Building_BlueSky_GreenGrass.jpeg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    opacity: 0.7;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bg-computation {
+    background-image: url('./digital-brain-ideas-robo-human-digital-background-neon-glow-can-be-used-online-graphics-brain-138701289.jpeg');
+}
+
+#bg-biography {
+    background-image: url('./john_von_neumann.jpeg');
+}
+
+#bg-reflection {
+    background-image: url('./1-Computer-Number-System-Binary-and-HexaDecimal.jpeg');
+}
+
 #href-computation {
     position: absolute;
     height: 200px;
     width: 400px;
-    background: white;
     left: 15%;
-    top: 10%;
+    top: 15%;
+    z-index: 10;
 }
 
 #href-biography {
     height: 500px;
     width: 400px;
-    background: blue;
     color: black;
     margin: auto;
+    z-index: -10;
 }
 
 #href-reflection {
     position: absolute;
     height: 200px;
     width: 400px;
-    background: white;
     right: 15%;
-    bottom: 10%;
+    bottom: 1%;
 }
