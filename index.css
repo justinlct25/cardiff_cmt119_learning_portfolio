@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    background: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('./futures-literacy-background.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('./futures-literacy-background.webp') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -115,7 +114,7 @@ a {
 
 #subject-information {
     position: relative;
-    padding: 10px 10px 20px 20px;
+    padding: 10px 20px 10px 20px;
     width: 100%;
     /* margin-left: 30px; */
     /* margin-left: 30px; */
@@ -141,13 +140,6 @@ a {
 
 #subject-name {
     font-size: 50px;
-}
-
-#subject-btn {
-    font-size: 20px;
-    text-align: center;
-    background: white;
-    color: black;
 }
 
 #subject-back {
@@ -219,7 +211,7 @@ a {
 }
 
 #bg-biography {
-    background-image: url('./john_von_neumann.jpeg');
+    background-image: url('./Sir_Tim_Berners-Lee.jpeg');
 }
 
 #bg-reflection {
