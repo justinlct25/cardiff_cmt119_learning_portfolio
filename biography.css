@@ -1,0 +1,109 @@
+#brief-bio {
+    padding: 90px 30px 80px 30px;
+    text-align: center;
+}
+
+#brief-bio-words {
+    position: relative;
+    margin: auto;
+    color: white;
+    max-width: 750px;
+    line-height: 25px;
+}
+
+#bg-bio-img {
+    background-image: none;
+    background: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.timeline-container-bio {
+    height: auto;
+    /* width: 100%; */
+    position: relative;
+    color: white;
+    padding: 30px 0px 30px 0px;
+    /* margin: 30px 30px 30px 30px; */
+    /* margin: 70px 40px 70px 40px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    /* border-radius: 10px; */
+    /* border-color: rgba(255, 255, 255, 0.621); */
+}
+
+.timeline-event {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 40px;
+    margin: 40px;
+    margin-right: -500px;
+}
+
+.timeline-event:hover .event-knot {
+    background: rgb(0, 255, 255);
+    transition: 1s;
+}
+
+.timeline-event:hover div {
+    color: rgb(0, 255, 255);
+    transition: 1s;
+}
+
+.event-knot {
+    margin: auto;
+    height: 25px;
+    width: 25px;
+    background: white;
+    border-radius: 40px;
+    z-index: 30;
+}
+
+.event-line {
+    position: absolute;
+    /* margin: auto; */
+    height: 120px;
+    background: rgb(123, 122, 122);
+    width: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.event-content {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    text-align: right;
+    transform: translate(-0, -50%);
+    width: 50vw;
+}
+
+.event-year {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    text-align: left;
+    transform: translate(-0, -50%);
+}
+
+@media screen and (min-width: 1000px) {
+    #bg-bio-img {
+        background-image: url('./tim_berner_lee_bw.jpeg');
+    }
+    .event-content {
+        width: 38vw;
+    }
+    .timeline-event {
+        margin-right: 250px;
+    }
+}

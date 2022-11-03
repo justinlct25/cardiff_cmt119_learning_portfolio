@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="reflection.css">
     <script src="https://kit.fontawesome.com/eef06b7ff4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,25 +32,36 @@
         <!-- <div id="subject-list"></div> -->
         <!-- </div> -->
         <div id="subject-information">
-            <div id="subject">
-                <div id="subject-back"><i class="fa-solid fa-angle-left"></i> Biography</div>
+            <div id="page-nav">
+                <div class="subject-nav-left">
+                    <a href="./biography.html">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <div class="subject-nav-topic"> Biography</div>
+                    </a>
+                </div>
                 <div id="subject-info">
                     <div id="subject-btn">
                         <a href="./index.html">
+                            <!-- <i class="fa-solid fa-angle-right"></i> CMT119 - Computation Thinking <i class="fa-solid fa-angle-left"></i> -->
                             CMT119 - Computation Thinking
                         </a>
                     </div>
                     Module Learning Reflection
                 </div>
-                <div></div>
+                <div class="subject-nav-right">
+                    <a href="./computation.html">
+                        <div class="subject-nav-topic">Introductory Guide </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="separation-line"></div>
+    <!-- <div class="separation-line"></div> -->
     <div id="reflection-container">
         <div class="paragraph-container">
             <div class="paragraph-title">Introduction to the Internet</div>
-            <div class="reflection-paragraph">
+            <div class="reflection-paragraph media-flex-c">
                 <div class="paragraph-words ">
                     In this module, I read the brief history and learnt the basic structure of the internet, knowing the importance elements of network such as tcp/ip, ip-address, IPV4/IPV6, client-server, domain name, Network Address Translation (N.A.T), http, web-server,
                     w3c. <br>
@@ -55,12 +69,14 @@
                     as a connection of the networks, will be involved frequently throught my learning and working journey in the computing sector.<br>
                     <br>In this semester, I will be learning programming through experiencing practical web application development. Knowledge of the Interent which the web is based upon is fundamental.
                 </div>
-                <img class="paragraph-image right" src="./global-network-connection-world-map-point-and-line-composition-concept-of-global-business-illustration-free-vector.jpeg" />
+                <!-- <img class="paragraph-image right" src="./global-network-connection-world-map-point-and-line-composition-concept-of-global-business-illustration-free-vector.jpeg" /> -->
+                <img class="paragraph-image right" src="./shutterstock_112158140_4d470f76dc99e18ad75087b1b8410ea9.jpeg" />
+
             </div>
         </div>
         <div class="paragraph-container">
             <div class="paragraph-title">Introduction to Web Languages</div>
-            <div class="reflection-paragraph">
+            <div class="reflection-paragraph media-flex-cr">
                 <img class="paragraph-image left" src="./519-5191896_pofolio-website-html-css-javascript-logo-png-transparent.png" />
                 <div class="paragraph-words">
                     In this module, I obtain a better understanding of the Markup Language and Programming Language and became more familiar with how HTML, CSS and JavaScript together serve as the fundamental languages composing a website with their respective responsibilities.
@@ -73,7 +89,7 @@
         </div>
         <div class="paragraph-container">
             <div class="paragraph-title">Introduction to Programming</div>
-            <div class="reflection-paragraph">
+            <div class="reflection-paragraph media-flex-c">
                 <div class="paragraph-words">
                     I perceived the concept of low-level and high-level languages. While the high-level languages are more human readable, low-level languages require less computer interpretation.<br>
                     <br>High-level languages are suitable for me as a beginner to learn the programming concepts and algorithms for problem solving. The execution details which is not directly related to problem solving are abstracted by the languages.
@@ -87,13 +103,13 @@
         </div>
         <div class="paragraph-container">
             <div class="paragraph-title">Introduction to Data Representation</div>
-            <div class="reflection-paragraph">
+            <div class="reflection-paragraph media-flex-cr">
                 <img class="paragraph-image left" src="./number-system.png" />
                 <div class="paragraph-words">
                     I got familiar with how computers orgainse data and relate different bits to the correct data interpretation. I have learnt the reason of digital electronic computers using binary, convertion among the decimal, binary, octal and hexadecimal system, addition
                     and rounding of numbers, fixed-point number system, trade-off between range and precision, presentation of negative number through sign & magnitude or two-complement ways. <br>
-                    <br>Although operations involving number system and data representation might not be involved in the usage of JavaScript and Python in this semester, they are still fundamental concepts in computer science. Understanding can make it
-                    less confusing and unintuitive when handling other computer concepts. They are involved in computing operations such as storing and managing various type of data, sending data over the Internet, compression and encryption. The knowledge
+                    <br>Although operations of number system and data representation might not be involved in the usage of JavaScript and Python in this semester, they are still fundamental concepts in computer science. Understanding can make it less
+                    confusing and unintuitive when handling other computer concepts. They are involved in computing operations such as storing and managing various type of data, sending data over the Internet, compression and encryption. The knowledge
                     of bits also helps us to write more efficient code in the future.
                 </div>
             </div>
