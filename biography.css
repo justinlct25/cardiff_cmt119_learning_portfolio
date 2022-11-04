@@ -8,7 +8,7 @@
     margin: auto;
     color: white;
     max-width: 750px;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 #bg-bio-img {
@@ -24,19 +24,13 @@
 
 .timeline-container-bio {
     height: auto;
-    /* width: 100%; */
     position: relative;
     color: white;
     padding: 30px 0px 30px 0px;
-    /* margin: 30px 30px 30px 30px; */
-    /* margin: 70px 40px 70px 40px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: solid; */
-    /* border-radius: 10px; */
-    /* border-color: rgba(255, 255, 255, 0.621); */
 }
 
 .timeline-event {
@@ -50,7 +44,7 @@
 
 .timeline-event:hover .event-knot {
     background: rgb(0, 255, 255);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .timeline-event:hover div {
@@ -96,9 +90,27 @@
     transform: translate(-0, -50%);
 }
 
+.reference-container {
+    padding: 0px 0px 0px 0px;
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.gray {
+    color: rgba(255, 255, 255, 0.586);
+}
+
+.references li {
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.586);
+    margin: 10px;
+    text-align: center;
+}
+
 @media screen and (min-width: 1000px) {
     #bg-bio-img {
-        background-image: url('./tim_berner_lee_bw.jpeg');
+        background-image: url('./images/tim_berner_lee_bw.jpeg');
     }
     .event-content {
         width: 38vw;

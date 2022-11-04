@@ -1,348 +1,411 @@
-body {
-    margin: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('./futures-literacy-background.webp') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /* font-family: 'Roboto', sans-serif; */
-}
-
-span {
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(0px);
-    -o-filter: blur(0px);
-    -ms-filter: blur(13px);
-    filter: blur(0px);
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.flex-column-reverse {
-    flex-direction: column-reverse;
-}
-
-.href:hover {
-    opacity: 1 !important;
-    background: cyan;
-    transition: 0.5s;
-}
-
-.border-fade {
-    box-shadow: 0 0 4px 4px white inset;
-}
-
-.separation-line {
-    border-bottom: 1px solid white;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.center-div-xy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center-div-x {
-    display: flex;
-    justify-content: center;
-}
-
-#website-navigation {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    font-size: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-#nav-info-container {
-    display: flex;
-}
-
-#nav-info-container div {
-    margin-left: 20px;
-    font-size: 30px;
-    text-align: center;
-    line-height: 40px;
-}
-
-#personal-info {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-}
-
-#outer-container {
-    display: flex;
-    width: 100%;
-}
-
-#subject-nav-btn:checked~.subject-nav::after {
-    /* display: inline; */
-    background: red;
-}
-
-#subject-navigation {
-    /* position: absolute; */
-    /* left: 0; */
-    /* display: none; */
-}
-
-
-/* 
-#subject-navigation div {
-    display: none;
-    background: red;
-    height: 100%;
-    width: 200px;
-}
-
-#subject-navigation:focus div {
-    display: block;
-    position: inherit;
-    background: blue;
-} */
-
-#subject-information {
-    position: relative;
-    padding: 10px 20px 10px 20px;
-    width: 100%;
-    /* margin-left: 30px; */
-    /* margin-left: 30px; */
-}
-
-#subject {
-    position: relative;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 10px 30px 10px;
-}
-
-#subject-code {
-    font-size: 20px;
-    width: 140px;
-}
-
-#subject-name {
-    font-size: 50px;
-    margin: 0px 30px 0px 30px;
-    text-align: center;
-    line-height: 50px;
-}
-
-.subject-nav {
-    font-size: 20px;
-    display: flex;
-}
-
-.subject-nav-topic {
-    display: none;
-}
-
-#content-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 10px;
-    /* height: 500px; */
-    height: max-content
-}
-
-.text-align-left {
-    text-align: left;
-}
-
-.text-align-right {
-    text-align: right;
-}
-
-.relative-container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-.relative-container span {
-    margin: 20px;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    /* font-weight: bold; */
-}
-
-.center-div-x span {
-    color: black;
-    font-weight: bold;
-}
-
-.bg {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    opacity: 0.7;
-    border-radius: 20px;
-}
-
-#bg-body {
-    background-image: url('./futures-literacy-background.webp');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: absolute;
-    z-index: -20;
-    opacity: 0.4 !important;
-}
-
-#bg-school {
-    background-image: url('./Main-Building_BlueSky_GreenGrass.jpeg');
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    opacity: 0.7;
-    z-index: -10;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#bg-computation {
-    background-image: url('./digital-brain-ideas-robo-human-digital-background-neon-glow-can-be-used-online-graphics-brain-138701289.jpeg');
-}
-
-#bg-biography {
-    background-image: url('./Sir_Tim_Berners-Lee.jpeg');
-}
-
-#bg-reflection {
-    background-image: url('./1-Computer-Number-System-Binary-and-HexaDecimal.jpeg');
-}
-
-#href-column-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#href-computation {
-    /* position: absolute; */
-    height: 200px;
-    width: 400px;
-    /* left: 15%; */
-    /* top: 15%; */
-    z-index: 10;
-}
-
-#href-biography {
-    height: 500px;
-    width: 400px;
-    color: black;
-    margin: 30px 0px 30px 0px;
-    z-index: -10;
-}
-
-#href-biography span {
-    display: none;
-    margin: auto;
-    color: white
-}
-
-#href-biography:hover span {
-    display: block
-}
-
-#href-reflection {
-    /* position: absolute; */
-    height: 200px;
-    width: 400px;
-    /* right: 15%; */
-    /* bottom: 1%; */
-}
-
-.href {
-    border-radius: 20px;
-}
-
-.href-description {
-    color: white;
-    display: none;
-    width: 100%;
-    text-align: center;
-}
-
-.href:hover .href-description {
-    display: block;
-}
-
-.media-display-a {
-    display: none;
-}
-
-.media-display-b {
-    display: none;
-}
-
-.media-flex-c {
-    flex-direction: column;
-}
-
-.media-flex-cr {
-    flex-direction: column-reverse;
-}
-
-@media screen and (min-width: 400px) {
-    .media-display-a {
-        display: block;
-    }
-    .media-display-b {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 767px) {}
-
-@media screen and (min-width: 830px) {
-    #content-container {
-        flex-direction: row;
-        height: 500px;
-    }
-    .media-display-a {
-        display: none;
-    }
-    .media-display-b {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .media-flex-c {
-        flex-direction: row;
-    }
-    .media-flex-cr {
-        flex-direction: row;
-    }
-}
-
-@media screen and (min-width: 1210px) {
-    .media-display-a {
-        display: block;
-    }
-    .media-display-b {
-        display: none;
-    }
-}
+        body {
+            margin: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('./images/futures-literacy-background.webp') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /* font-family: 'Roboto', sans-serif; */
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        ul {
+            list-style-position: outside;
+            padding-inline-start: 0;
+        }
+        
+        span {
+            -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -o-filter: blur(0px);
+            -ms-filter: blur(13px);
+            filter: blur(0px);
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .flex-column-reverse {
+            flex-direction: column-reverse;
+        }
+        
+        .href:hover {
+            opacity: 1 !important;
+            background: cyan;
+            transition: 0.5s;
+        }
+        
+        .border-fade {
+            box-shadow: 0 0 4px 4px white inset;
+        }
+        
+        .separation-line {
+            border-bottom: 1px solid white;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        
+        .center-div-xy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .center-div-x {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #website-navigation {
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-size: 40px;
+            margin-left: 30px;
+            margin-right: 30px;
+            text-align: center;
+            align-items: center;
+            line-height: 40px;
+        }
+        
+        #nav-info-container {
+            display: none;
+            font-size: 40px;
+            ;
+        }
+        
+        #subject-nav-container {
+            font-size: 1.2rem;
+        }
+        
+        #personal-info-container {
+            position: relative;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+        }
+        
+        #personal-info-container:hover #personal-info {
+            display: block;
+            transform: 1s;
+        }
+        
+        #personal-info {
+            display: none;
+            position: absolute;
+            top: -0.4rem;
+            right: 40px;
+            color: white;
+            font-size: 1rem;
+            width: 200px;
+            height: 80px;
+            z-index: 100;
+            line-height: 25px;
+            text-align: center;
+        }
+        
+        #outer-container {
+            display: flex;
+            width: 100%;
+        }
+        
+        #subject-nav-btn:checked~.subject-nav::after {
+            background: red;
+        }
+        
+        #subject-information {
+            position: relative;
+            padding: 10px 20px 10px 20px;
+            width: 100%;
+        }
+        
+        #subject {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 10px 30px 10px;
+        }
+        
+        #subject-code {
+            display: none;
+            position: relative;
+            font-size: 20px;
+            width: 140px;
+        }
+        
+        #subject-brief-info-container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: 20px;
+            width: 140px;
+            margin-top: 10px;
+        }
+        
+        #subject-brief-info-container:hover {
+            color: rgba(0, 255, 255, 0.728)
+        }
+        
+        #subject-brief-info-container:hover #subject-brief-info {
+            display: block;
+        }
+        /* #subject-brief-info {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.862);
+            color: white;
+            right: 0px;
+            top: 50%;
+            width: 300%;
+            transform: translate(-50%, -50%);
+            font-size: 0.8rem;
+            text-align: center;
+        } */
+        
+        #subject-brief-info {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.862);
+            color: white;
+            left: 70px;
+            width: 300%;
+            transform: translate(-50%, -50%);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        
+        #subject-name {
+            font-size: 50px;
+            margin: 0px 30px 0px 30px;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        .subject-nav {
+            font-size: 20px;
+            display: flex;
+        }
+        
+        .subject-nav-topic {
+            display: none;
+        }
+        
+        #content-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 10px;
+            height: max-content
+        }
+        
+        .text-align-left {
+            text-align: left;
+        }
+        
+        .text-align-right {
+            text-align: right;
+        }
+        
+        .relative-container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .relative-container span {
+            margin: 20px;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+        
+        .center-div-x span {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .bg {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-size: 100%;
+            opacity: 0.7;
+            border-radius: 20px;
+        }
+        
+        #bg-body {
+            background-image: url('./images/futures-literacy-background.webp');
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: absolute;
+            z-index: -20;
+            opacity: 0.4 !important;
+        }
+        
+        #bg-school {
+            background-image: url('./images/Main-Building_BlueSky_GreenGrass.jpeg');
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-size: 100%;
+            opacity: 0.7;
+            z-index: -10;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #bg-computation {
+            background-image: url('./images/digital-brain-ideas-robo-human-digital-background-neon-glow-can-be-used-online-graphics-brain-138701289.jpeg');
+        }
+        
+        #bg-biography {
+            background-image: url('./images/Sir_Tim_Berners-Lee.jpeg');
+        }
+        
+        #bg-reflection {
+            background-image: url('./images/1-Computer-Number-System-Binary-and-HexaDecimal.jpeg');
+        }
+        
+        #href-column-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        #href-computation {
+            /* position: absolute; */
+            height: 200px;
+            width: 400px;
+            /* left: 15%; */
+            /* top: 15%; */
+            z-index: 10;
+        }
+        
+        #href-biography {
+            height: 500px;
+            width: 400px;
+            color: black;
+            margin: 30px 0px 30px 0px;
+            z-index: -10;
+        }
+        
+        #href-biography span {
+            display: none;
+            margin: auto;
+            color: white
+        }
+        
+        #href-biography:hover span {
+            display: block
+        }
+        
+        #href-reflection {
+            height: 200px;
+            width: 400px;
+        }
+        
+        .href {
+            border-radius: 20px;
+        }
+        
+        .href-description {
+            color: white;
+            display: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .href:hover .href-description {
+            display: block;
+        }
+        
+        .media-display-a {
+            display: block;
+        }
+        
+        .media-display-b {
+            display: none;
+        }
+        
+        .media-flex-c {
+            flex-direction: column;
+        }
+        
+        .media-flex-cr {
+            flex-direction: column-reverse;
+        }
+        
+        @media screen and (min-width: 400px) {
+            .media-display-a {
+                display: block;
+            }
+            .media-display-b {
+                display: none;
+            }
+        }
+        
+        @media screen and (min-width: 767px) {
+            #website-navigation {
+                justify-content: space-between;
+            }
+            #nav-info-container {
+                display: flex;
+            }
+            #subject {
+                flex-direction: row;
+            }
+            #subject-code {
+                display: block;
+            }
+            #subject-brief-info-container {
+                margin: 0
+            }
+            #subject-brief-info {
+                left: -150px;
+                right: 10px;
+                top: 50%;
+            }
+        }
+        
+        @media screen and (min-width: 830px) {
+            #content-container {
+                flex-direction: row;
+                height: 500px;
+            }
+            .media-display-a {
+                display: none;
+            }
+            .media-display-b {
+                display: block;
+            }
+        }
+        
+        @media screen and (min-width: 1000px) {
+            .media-flex-c {
+                flex-direction: row;
+            }
+            .media-flex-cr {
+                flex-direction: row;
+            }
+        }
+        
+        @media screen and (min-width: 1210px) {
+            .media-display-a {
+                display: block;
+            }
+            .media-display-b {
+                display: none;
+            }
+        }

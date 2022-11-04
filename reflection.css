@@ -21,11 +21,12 @@
 
 .img-container {
     position: relative;
+    margin: 3rem 1rem 1rem 1rem;
 }
 
 .img-container:hover img {
     opacity: 0.8;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
 .img-container:hover .img-ref {
@@ -50,6 +51,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 80%;
     padding: 0px 30px 0px 30px;
 }
 
@@ -58,10 +60,8 @@
     text-align: center;
     background: white;
     color: black;
-    /* width: max-content; */
     border-radius: 5px;
     padding: 0px 20px 0px 20px;
-    /* padding: 0px 10px 0px 10px; */
     margin-bottom: 15px;
 }
 
@@ -76,7 +76,9 @@
     font-size: 20px;
 }
 
-#reflect-container {}
+#reflect-container {
+    text-align: center;
+}
 
 .paragraph-container {
     border: solid;
@@ -88,7 +90,8 @@
 }
 
 .paragraph-title {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     font-size: 30px;
     text-align: center;
     font-weight: bold;
@@ -98,17 +101,15 @@
 
 .reflection-paragraph {
     display: flex;
-    /* justify-content: center; */
     justify-content: space-around;
     align-items: center;
-    line-height: 25px;
     margin: 0px 10px 0px 10px;
-    /* padding-bottom: 50px; */
 }
 
 .paragraph-words {
     color: white;
     width: 85%;
+    line-height: 25px;
 }
 
 .ref-link {
@@ -116,11 +117,9 @@
 }
 
 .paragraph-image {
-    width: 400px;
-    /* max-height: 350px; */
-    /* height: 250px; */
+    width: 10rem;
     height: auto;
-    margin: 30px 0px 30px 0px
+    margin: 30px 10px 30px 10px
 }
 
 .left {
@@ -131,12 +130,15 @@
     /* padding: 0px 0px 0px 100px; */
 }
 
+@media screen and (min-width: 400px) {
+    .paragraph-image {
+        width: 20rem;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .paragraph-words {
         width: 45%
-    }
-    .paragraph-image {
-        margin: 0
     }
     .subject-nav-topic {
         display: inline;
