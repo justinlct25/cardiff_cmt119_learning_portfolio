@@ -5,7 +5,6 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            /* font-family: 'Roboto', sans-serif; */
             font-family: "Times New Roman", Times, serif;
         }
         
@@ -74,7 +73,6 @@
         #nav-info-container {
             display: none;
             font-size: 40px;
-            ;
         }
         
         #subject-nav-container {
@@ -132,10 +130,10 @@
         }
         
         #subject-code {
-            display: none;
             position: relative;
             font-size: 20px;
             width: 140px;
+            text-align: center;
         }
         
         #subject-brief-info-container {
@@ -154,18 +152,6 @@
         #subject-brief-info-container:hover #subject-brief-info {
             display: block;
         }
-        /* #subject-brief-info {
-            display: none;
-            position: absolute;
-            background: rgba(0, 0, 0, 0.862);
-            color: white;
-            right: 0px;
-            top: 50%;
-            width: 300%;
-            transform: translate(-50%, -50%);
-            font-size: 0.8rem;
-            text-align: center;
-        } */
         
         #subject-brief-info {
             display: none;
@@ -180,10 +166,10 @@
         }
         
         #subject-name {
-            font-size: 50px;
             margin: 0px 30px 0px 30px;
             text-align: center;
-            line-height: 50px;
+            font-size: 30px;
+            line-height: 35px;
         }
         
         .subject-nav {
@@ -285,17 +271,14 @@
         }
         
         #href-computation {
-            /* position: absolute; */
-            height: 200px;
-            width: 400px;
-            /* left: 15%; */
-            /* top: 15%; */
+            height: 100px;
+            width: 200px;
             z-index: 10;
         }
         
         #href-biography {
-            height: 500px;
-            width: 400px;
+            height: 250px;
+            width: 200px;
             color: black;
             margin: 30px 0px 30px 0px;
             z-index: -10;
@@ -312,8 +295,8 @@
         }
         
         #href-reflection {
-            height: 200px;
-            width: 400px;
+            height: 100px;
+            width: 200px;
         }
         
         .href {
@@ -347,12 +330,41 @@
             flex-direction: column-reverse;
         }
         
+        #footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: end;
+            font-size: 12px;
+            opacity: 0.5;
+            margin-right: 200px;
+        }
+        
         @media screen and (min-width: 400px) {
             .media-display-a {
                 display: block;
             }
             .media-display-b {
                 display: none;
+            }
+            #subject-name {
+                font-size: 50px;
+                line-height: 50px;
+            }
+            #href-computation {
+                height: 200px;
+                width: 400px;
+            }
+            #href-biography {
+                height: 500px;
+                width: 400px;
+            }
+            #href-reflection {
+                height: 200px;
+                width: 400px;
             }
         }
         
@@ -365,9 +377,6 @@
             }
             #subject {
                 flex-direction: row;
-            }
-            #subject-code {
-                display: block;
             }
             #subject-brief-info-container {
                 margin: 0
